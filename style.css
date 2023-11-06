@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/pexels-drift-shutterbug-2085998.jpg);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    width: 70%;
+}
+
+.me {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.447);
+    box-shadow: 0 4px 8px 0 rgba(37, 37, 37, 0.669);
+    height: 650px;
+    width: 30%;
+}
+
+input {
+    position:absolute;
+    top:20px;
+    box-shadow: 0 4px 8px 0 rgba(251, 246, 246, 0.669);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.631);
+    outline: none;
+    border-bottom: 2px solid white;
+    margin: 20px;
+    width: 370px;
+    height: 70px;
+    border-radius:30px;
+    text-align:center;
+}
+input::placeholder{
+    text-transform:uppercase;
+    color:white;
+}
+#flex {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+}
+#error{
+    position:absolute;
+    color:white;
+    top:10px;
+    text-transform:uppercase;
+    left:30%;
+}
+.sef {
+    position: absolute;
+    top:23px;
+    left: 73%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+#displayWeather {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+}
+
+#displayWeather img {
+    width: 400px;
+}
+
+#flex2 {
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    text-align: center;
+    gap: 20px;
+    
+}
+
+.seal img {
+    width: 100px
+}
+#flex3{  
+    margin: 10px;
+    font-size: 15px;
+    gap: 30px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+}
+.go{
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+}
+@media(max-width:770px){
+    body{
+        height:100vh;
+    }
+   input{
+    width:200px;
+    height:50px;
+   }
+   .sef{
+    position:absolute;
+    left:63%;
+    top:20px;
+    width:40px;
+    height:40px
+   }
+   #displayWeather img {
+    width: 300px;
+  }
+  #flex2 {
+      display: flex;
+      justify-content: center;
+      font-size: 18px;
+      text-align: center;
+      gap: 20px;
+      
+  } .go{
+    margin-top: 30px;
+    font-size: 10px !important;
+    text-align:center !important;
+  }
+  .me{
+    height:490px;
+  }
+  #flex3{
+    gap: 50px;
+  }
+}
